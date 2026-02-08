@@ -7,3 +7,5 @@ data/**/*.csvdata/csv/
 *.csv
 data/csv/
 *.csv
+.venv.venv/
+venv/
