@@ -1,0 +1,14 @@
+From: "Bank Support" <support@bank-secure.example>
+To: user@example.com
+Subject: Urgent: Verify your account now
+Date: Tue, 27 Jan 2026 12:00:00 +0000
+Message-ID: <sample-1@example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Dear customer,
+
+Your account will be locked. Verify now: http://secure-login.example/verify
+
+Thanks,
+Security Team

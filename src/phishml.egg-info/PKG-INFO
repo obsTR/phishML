@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: phishml
+Version: 0.0.1
+Summary: Phishing detection pipeline for raw .eml emails
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: scikit-learn==1.5.2
+Requires-Dist: numpy==2.1.3
+Requires-Dist: pandas==2.2.3
+Requires-Dist: joblib==1.4.2
+
+# phishML
+
+Phishing detection pipeline for raw `.eml` emails. CLI-first: parse -> feature extraction -> dataset -> baseline model -> scoring.
+
+## Quickstart
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+pip install -e .
+
+# Parse a single email
+python -m phishml.cli parse --input .\data\sample.eml --output .\out.json
+
+# Build dataset from folders (expects data/raw/phish and data/raw/ham)
+python -m phishml.cli build-dataset --input-dir .\data\raw --output .\data\features.csv
+
+# Train baseline model
+python -m phishml.cli train --dataset .\data\features.csv --model-out .\models\baseline.pkl
+
+# Score a single email
+python -m phishml.cli score --model .\models\baseline.pkl --input .\data\sample.eml
+```
+
+## Dataset layout
+
+```
+ data/
+   raw/
+     phish/   # phishing .eml
+     ham/     # benign .eml
+```
+
+## Notes
+- Input is raw RFC 5322 `.eml`.
+- No PII restrictions assumed, but the pipeline can be adapted to hash/strip fields.
+- URL parsing avoids network calls; TLD detection is heuristic.
