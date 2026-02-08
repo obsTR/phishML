@@ -5,3 +5,5 @@ __pycache__/
 data/csv/
 data/**/*.csvdata/csv/
 *.csv
+data/csv/
+*.csv
