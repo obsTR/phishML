@@ -1,1 +1,0 @@
-// Activity for extract.py
