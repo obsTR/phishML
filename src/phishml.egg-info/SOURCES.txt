@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/phishml/__init__.py
+src/phishml/cli.py
+src/phishml/features.py
+src/phishml/model.py
+src/phishml/parser.py
+src/phishml.egg-info/PKG-INFO
+src/phishml.egg-info/SOURCES.txt
+src/phishml.egg-info/dependency_links.txt
+src/phishml.egg-info/requires.txt
+src/phishml.egg-info/top_level.txt

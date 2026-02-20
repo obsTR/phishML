@@ -1,0 +1,37 @@
+{
+  "message_id": "<sample-1@example>",
+  "timestamp_utc": "Tue, 27 Jan 2026 12:00:00 +0000",
+  "from_name": "Bank Support",
+  "from_email": "support@bank-secure.example",
+  "reply_to_name": null,
+  "reply_to_email": null,
+  "to_emails": [
+    "user@example.com"
+  ],
+  "cc_emails": [],
+  "subject": "Urgent: Verify your account now",
+  "body_text": "Dear customer,\n\nYour account will be locked. Verify now: http://secure-login.example/verify\n\nThanks,\nSecurity Team",
+  "body_html": "",
+  "headers": {
+    "return_path": "",
+    "received": [],
+    "spf": "unknown",
+    "dkim": "unknown",
+    "dmarc": "unknown",
+    "mime_version": "1.0",
+    "content_type": "text/plain; charset=\"UTF-8\"",
+    "user_agent": "",
+    "authentication_results": ""
+  },
+  "urls": [
+    {
+      "url": "http://secure-login.example/verify",
+      "domain": "secure-login",
+      "tld": "example",
+      "path": "/verify",
+      "query": "",
+      "is_ip_url": false
+    }
+  ],
+  "attachments": []
+}

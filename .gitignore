@@ -1,0 +1,11 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+data/csv/
+data/**/*.csvdata/csv/
+*.csv
+data/csv/
+*.csv
+.venv.venv/
+venv/
